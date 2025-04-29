@@ -1,0 +1,171 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.overlaytext {
+    color: red;
+    font-size: 150px;
+    font-family: Helvetica;
+    position: fixed;
+    top: 0;
+    padding-left: 2px;
+
+    text-shadow: rgba(255,255,255,0.9) 0px 0px 20px;
+
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.about {
+    width: 1000px;
+    height: 500px;
+    border: 1px solid black;
+    background: yellow;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+
+    display: none;
+}
+
+.buttontext {
+    color: red;
+    font-family: Helvetica;
+    cursor: pointer;
+}
+
+.groupingtext {
+    color: red;
+    font-family: Helvetica;
+}
+
+.projecttitle {
+    color: black;
+    font-family: Helvetica;
+    font-weight: bold;
+    max-width: 600px;
+}
+
+.bodytext {
+    color: black;
+    font-family: Helvetica;
+    max-width: 600px;
+
+    line-height: 1.125em;
+}
+
+.buttontext:hover {
+    color: rgba(255, 0, 0, 0.5);
+}
+
+.headerspace {
+    height: 155px;
+    width: 100%;
+    border-bottom: 1px solid black;
+    background: white;
+}
+
+.buttons {
+    /* background: pink; */
+    height: 155px;
+    width: 100px;
+
+    position: absolute;
+    right: 0px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.landingimage {
+    max-width: 100%;
+}
+
+.landingtext {
+    width: 50%;
+    background: white;
+    text-align: right;
+}
+
+.grouping {
+    width: 100%;
+    height: 40px; 
+    background: white;
+    border-bottom: 1px solid black;
+
+    display: flex;
+    flex-direction: row-reverse;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 20px;
+}
+
+.project {
+    height: 500px;
+    width: 100%;
+    border-bottom: 1px solid black;
+    background: lightgoldenrodyellow;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.firstimage {
+    width: 67%;
+
+    background: orange;
+    overflow: hidden;
+}
+
+.firsttext {
+    width: 33%;
+    background: white;
+    padding: 20px;
+}
+
+.text {
+    width: 33%;
+    border-right: 1px solid black;
+    background: white;
+    padding: 20px;
+}
+
+.image {
+    width: 67%;
+
+    background: white;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: row;
+
+    overflow-x: scroll;
+
+    padding: 15px;
+
+    gap: 15px;
+}
+
+.projectimage {
+    max-height: 100%;
+}
+
+a:link {
+    color: red;
+  }
+  
+  a:visited {
+    color: red;
+  }
+  
+  a:hover {
+    color: rgba(255, 0, 0, 0.5);
+  }
+  
+  a:active {
+    color: red;
+  } 
