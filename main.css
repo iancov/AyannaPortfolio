@@ -3,31 +3,11 @@
     margin: 0;
 }
 
-.overlaytext {
+.nametext {
     color: red;
-    font-size: 150px;
+    font-size: 8vw;
     font-family: Helvetica;
-    position: fixed;
-    top: 0;
-    padding-left: 2px;
-
-    text-shadow: rgba(255,255,255,0.9) 0px 0px 20px;
-
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.about {
-    width: 1000px;
-    height: 500px;
-    border: 1px solid black;
-    background: yellow;
-    position: fixed;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
-
-    display: none;
+    padding-left: 5px;
 }
 
 .buttontext {
@@ -36,9 +16,19 @@
     cursor: pointer;
 }
 
+.buttontext:hover {
+    color: rgba(255, 0, 0, 0.5);
+}
+
 .groupingtext {
     color: red;
     font-family: Helvetica;
+}
+
+.secrettext {
+    color: rgb(245, 245, 245);
+    font-family: Helvetica;
+    padding-right: 5px;
 }
 
 .projecttitle {
@@ -56,30 +46,36 @@
     line-height: 1.125em;
 }
 
-.buttontext:hover {
-    color: rgba(255, 0, 0, 0.5);
-}
+
+
 
 .headerspace {
-    height: 155px;
+    height: 125px;
     width: 100%;
     border-bottom: 1px solid black;
-    background: white;
 }
 
-.buttons {
-    /* background: pink; */
-    height: 155px;
+.bigtextbox {
+    width: calc(100% - 100px);
+}
+
+.buttonbox {
+    height: 125px;
     width: 100px;
 
     position: absolute;
-    right: 0px;
+    right: 0;
+    top:0;
+    padding: 20px;
 
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items:end;
     justify-content: space-evenly;
 }
+
+
+
 
 .landingimage {
     max-width: 100%;
@@ -91,6 +87,22 @@
     text-align: right;
 }
 
+.firstimage {
+    width: 67%;
+
+    /* background: orange; */
+    overflow: hidden;
+}
+
+.firsttext {
+    width: 33%;
+    background: white;
+    padding: 20px;
+}
+
+
+
+
 .grouping {
     width: 100%;
     height: 40px; 
@@ -99,32 +111,20 @@
 
     display: flex;
     flex-direction: row-reverse;
-    /* justify-content: center; */
     align-items: center;
     padding: 20px;
+
+    position: sticky;
+    top: 0;
 }
 
 .project {
     height: 500px;
     width: 100%;
     border-bottom: 1px solid black;
-    background: lightgoldenrodyellow;
 
     display: flex;
     flex-direction: row;
-}
-
-.firstimage {
-    width: 67%;
-
-    background: orange;
-    overflow: hidden;
-}
-
-.firsttext {
-    width: 33%;
-    background: white;
-    padding: 20px;
 }
 
 .text {
@@ -136,23 +136,23 @@
 
 .image {
     width: 67%;
-
     background: white;
     overflow: hidden;
 
     display: flex;
     flex-direction: row;
+    padding: 15px;
+    gap: 15px;
 
     overflow-x: scroll;
-
-    padding: 15px;
-
-    gap: 15px;
 }
 
 .projectimage {
     max-height: 100%;
 }
+
+
+
 
 a:link {
     color: red;
@@ -168,4 +168,48 @@ a:link {
   
   a:active {
     color: red;
-  } 
+  }
+
+
+
+
+  @media screen and (max-width:1000px) {
+
+.project {
+    flex-direction: column;
+}
+
+.firsttext {
+    width: 100vw;
+}
+
+.text {
+    width: 100vw;
+}
+
+.firstimage {
+    width: 100vw;
+}
+
+.image {
+    width: 100vw;
+}
+
+.bodytext {
+    max-width: 100vw;
+    font-size: .90em;
+}
+
+.projecttitle {
+    font-size: .90em;
+}
+
+.groupingtext {
+    font-size: .90em;
+}
+
+.buttontext {
+    font-size: .90em;
+}
+
+  }
